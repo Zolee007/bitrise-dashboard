@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "react-app",
+    "eslint:recommended" /* Recommended ESLint rules */,
+    "plugin:@typescript-eslint/eslint-recommended" /* Recommended TypeScript rules */,
+    "plugin:@typescript-eslint/recommended" /* Recommended TypeScript rules */,
+    // "plugin:@typescript-eslint/recommended-requiring-type-checking" /* Recommended TypeScript rules */,
+    "plugin:react/recommended" /* Recommended React rules */,
+    "plugin:prettier/recommended" /* Recommended Prettier rules */,
+    "prettier/@typescript-eslint",
+    "prettier/react"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser" /* Specifies the parser to use */,
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true /* Allows for parsing JSX */
+    },
+    "ecmaVersion": 2018 /* Allows for using modern ECMAScript features */,
+    "sourceType": "module" /* Allows for using imports */
+  },
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "line": {
+          "markers": ["!", "?", "*", "//"],
+          "exceptions": ["-", "#", "/"]
+        },
+        "block": {
+          "balanced": true
+        }
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
