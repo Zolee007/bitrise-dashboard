@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/camelcase */
 import { Organization } from "types/Organization";
 
-/* eslint-disable @typescript-eslint/camelcase */
+// * Endpoint: /organizations
 export const MockOrganizations: Organization[] = [
   {
     name: "bjornbORG",

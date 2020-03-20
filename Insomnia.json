@@ -1,0 +1,432 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-03-20T10:53:15.019Z",
+  "__export_source": "insomnia.desktop.app:v7.1.1",
+  "resources": [
+    {
+      "_id": "req_1a250c45f38f439b864cf7b5f2e75426",
+      "authentication": {},
+      "body": {},
+      "created": 1584447573917,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_b6edb671846648ceaa8e747c464c14bb",
+          "name": "Authorization",
+          "value": "{{ auth_key  }}"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1584447710695,
+      "method": "GET",
+      "modified": 1584531666303,
+      "name": "Bitrise /me",
+      "parameters": [],
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/me",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "created": 1584299895834,
+      "description": "",
+      "modified": 1584299895834,
+      "name": "Insomnia",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_53a9226806934fb08f848a91bc27accb",
+      "authentication": {},
+      "body": {},
+      "created": 1584447710645,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_3bb1198ade2c404aa10d0bfacd173baf",
+          "name": "Authorization",
+          "value": "{{ auth_key  }}"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1584447710645,
+      "method": "GET",
+      "modified": 1584448050128,
+      "name": "Bitrise /orgs",
+      "parameters": [],
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/organizations",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3e2a4a880ec64e6db7aae242d1e5245f",
+      "authentication": {},
+      "body": {},
+      "created": 1584448312540,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_7a58be03d398423190bf0bb72faa5d75",
+          "name": "Authorization",
+          "value": "{{ auth_key  }}"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1584447710595,
+      "method": "GET",
+      "modified": 1584648239660,
+      "name": "Bitrise /apps",
+      "parameters": [],
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/apps?{{ sort_by_last_built_at  }}",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ea07d8c11cde4bcdba000810e495c066",
+      "authentication": {},
+      "body": {},
+      "created": 1584450045516,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_7a58be03d398423190bf0bb72faa5d75",
+          "name": "Authorization",
+          "value": "{{ auth_key  }}"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1584447710588.75,
+      "method": "GET",
+      "modified": 1584556905630,
+      "name": "Bitrise /builds",
+      "parameters": [],
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/builds",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f793aafbc2f04cc58272561f8fabdd08",
+      "authentication": {},
+      "body": {},
+      "created": 1584448865302,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_920cfc58b4764ebd9b8eef9fe6861494",
+          "name": "Authorization",
+          "value": "{{ auth_key  }}"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1584447710582.5,
+      "method": "GET",
+      "modified": 1584449090900,
+      "name": "Bitrise /user/apps",
+      "parameters": [],
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/users/{{ user_slug  }}/apps?{{ sort_by_last_built_at  }}",
+      "_type": "request"
+    },
+    {
+      "_id": "req_2c49cd2a7e8341ac90f75798dfe375b9",
+      "authentication": {},
+      "body": {},
+      "created": 1584701331737,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_dcb867d739b146009dcafd6415aa7914",
+          "name": "Authorization",
+          "value": "{{ auth_key  }}"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1584447710576.25,
+      "method": "GET",
+      "modified": 1584701449469,
+      "name": "Bitrise /user/builds",
+      "parameters": [],
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/builds?owner_slug={{ user_slug  }}",
+      "_type": "request"
+    },
+    {
+      "_id": "req_98ffb33561f144b7a578c94c6ac8c8f7",
+      "authentication": {},
+      "body": {},
+      "created": 1584448700366,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_2366cb0ce06d406ea8a42c29ef4a8d4c",
+          "name": "Authorization",
+          "value": "{{ auth_key  }}"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1584447710570,
+      "method": "GET",
+      "modified": 1584449211312,
+      "name": "Bitrise /bjornbORG/apps",
+      "parameters": [],
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/organizations/{{ bjornb_org_slug  }}/apps?{{ sort_by_last_built_at  }}",
+      "_type": "request"
+    },
+    {
+      "_id": "req_cdb0f4de29e24fca9ddd1efff83aa103",
+      "authentication": {},
+      "body": {},
+      "created": 1584450012277,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_2366cb0ce06d406ea8a42c29ef4a8d4c",
+          "name": "Authorization",
+          "value": "{{ auth_key  }}"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1584447710557.5,
+      "method": "GET",
+      "modified": 1584556916694,
+      "name": "Bitrise /bjornbORG/builds",
+      "parameters": [],
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/builds?owner_slug={{ bjornb_org_slug  }}",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c0d6a31a58ee460e97a6907c042bcc73",
+      "authentication": {},
+      "body": {},
+      "created": 1584448673071,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_d61e401bbb2e411fac0c4f8d0128500d",
+          "name": "Authorization",
+          "value": "{{ auth_key  }}"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1584447710545,
+      "method": "GET",
+      "modified": 1584449283569,
+      "name": "Bitrise /NinjaCorp/apps",
+      "parameters": [],
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/organizations/{{ ninja_corp_slug  }}/apps?{{ sort_by_last_built_at  }}",
+      "_type": "request"
+    },
+    {
+      "_id": "req_87b53a481c5349e6b860e421d74ea003",
+      "authentication": {},
+      "body": {},
+      "created": 1584450441033,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_d61e401bbb2e411fac0c4f8d0128500d",
+          "name": "Authorization",
+          "value": "{{ auth_key  }}"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1584447710520,
+      "method": "GET",
+      "modified": 1584556923571,
+      "name": "Bitrise /NinjaCorp/builds",
+      "parameters": [],
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/builds?owner_slug={{ ninja_corp_slug  }}",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4fbbd3a3c98941b6a7e6d80eb9c52044",
+      "authentication": {},
+      "body": {},
+      "created": 1584448755861,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_c113d535d0674d3fb7b962c954a693db",
+          "name": "Authorization",
+          "value": "{{ auth_key  }}"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1584447710495,
+      "method": "GET",
+      "modified": 1584649845038,
+      "name": "Bitrise /SAMLOrg/apps",
+      "parameters": [{ "description": "", "id": "pair_e29b60fb26554cc3970e1c563d028adc", "name": "", "value": "" }],
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/organizations/{{ saml_org_slug  }}/apps?{{ sort_by_last_built_at  }}",
+      "_type": "request"
+    },
+    {
+      "_id": "req_64f00566339b4b48b814ee4891fa3440",
+      "authentication": {},
+      "body": {},
+      "created": 1584450467496,
+      "description": "",
+      "headers": [
+        {
+          "description": "",
+          "id": "pair_c113d535d0674d3fb7b962c954a693db",
+          "name": "Authorization",
+          "value": "{{ auth_key  }}"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1584447710445,
+      "method": "GET",
+      "modified": 1584556974106,
+      "name": "Bitrise /SAMLOrg/builds",
+      "parameters": [],
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/builds?owner_slug={{ saml_org_slug  }}",
+      "_type": "request"
+    },
+    {
+      "_id": "env_97f95db1c3db9f38f7620a8783ad93fac4b5d8c2",
+      "color": null,
+      "created": 1584299895907,
+      "data": {},
+      "dataPropertyOrder": null,
+      "isPrivate": false,
+      "metaSortKey": 1584299895908,
+      "modified": 1584299895907,
+      "name": "Base Environment",
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_97f95db1c3db9f38f7620a8783ad93fac4b5d8c2",
+      "cookies": [],
+      "created": 1584299895915,
+      "modified": 1584299895915,
+      "name": "Default Jar",
+      "parentId": "wrk_2793164c4e0844a5bc3b69eee7b2082a",
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "env_9fe320fbf32e44a69599dc4b416ef39c",
+      "color": "#7d69cb",
+      "created": 1584447793754,
+      "data": {
+        "auth_key": "aKuF2qiRUulrhIkVRc-0Lg5yPto76pc0r0N6GYqIT7I6DLRcPp-GAS_rgqNk2DYTWYyvIw3y_hQCFKDMBG4FpA",
+        "base_url": "https://api.bitrise.io/v0.1",
+        "bjornb_org_slug": "f57e770b0b6d7eb6",
+        "is_on_hold_false": "is_on_hold=false",
+        "ninja_corp_slug": "7cff6a494fa461ac",
+        "saml_org_slug": "6345241944df6e29",
+        "sort_by_last_built_at": "sort_by=last_build_at",
+        "user_slug": "f0aa1db2bc8d7952"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url",
+          "auth_key",
+          "sort_by_last_built_at",
+          "user_slug",
+          "bjornb_org_slug",
+          "ninja_corp_slug",
+          "saml_org_slug",
+          "is_on_hold_false"
+        ]
+      },
+      "isPrivate": false,
+      "metaSortKey": 1584447793754,
+      "modified": 1584649938840,
+      "name": "Bitrise",
+      "parentId": "env_97f95db1c3db9f38f7620a8783ad93fac4b5d8c2",
+      "_type": "environment"
+    }
+  ]
+}

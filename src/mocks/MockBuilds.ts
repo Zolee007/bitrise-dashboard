@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/camelcase */
 import { Build } from "types/Build";
 
+// * Endpoint: /builds
 export const MockBuilds: Build[] = [
   {
     triggered_at: "2020-03-16T14:18:23Z",

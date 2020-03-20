@@ -9,7 +9,7 @@ export type Build = {
   status: integer;
   status_text: string;
   build_number: number;
-  triggered_by: string;
+  triggered_by: string | null;
   triggered_workflow: string;
   original_build_params: OriginalBuildParams;
   branch: string;

@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/camelcase */
 import { User } from "types/User";
 
+// * Endpoint: /me
 export const DefaultUser: User = {
   username: "ninja",
   slug: "f0aa1db2bc8d7952",

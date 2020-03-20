@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/camelcase */
 import { App } from "types/App";
 
+// * Endpoint: /apps?sort_by=last_build_at
 export const MockApps: App[] = [
   {
     slug: "3c1cb20bd5a692d8",
