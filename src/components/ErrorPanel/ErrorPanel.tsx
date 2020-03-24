@@ -21,10 +21,14 @@ const ErrorPanel = ({ showImage = true, error, handler, ...rest }: ErrorPanelPro
       {error && (
         <>
           {showImage && <Image src={ErrorImage} />}
-          <Heading fontWeight="300" color="red">
+          <Heading data-cy="error-heading" fontWeight="300" color="red">
             {error.message}
           </Heading>
-          {handler && <Button onClick={handler}>Retry</Button>}
+          {handler && (
+            <Button data-cy="error-button" variant="big" onClick={handler}>
+              Retry
+            </Button>
+          )}
         </>
       )}
     </StyledFlex>

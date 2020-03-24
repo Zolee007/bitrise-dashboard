@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "slug": "d08709ae5c5f6171",
+      "title": "Fast building app",
+      "project_type": "android",
+      "provider": "github",
+      "repo_owner": "bitrise-samples",
+      "repo_url": "https://github.com/bitrise-samples/sample-apps-android-sdk22",
+      "repo_slug": "sample-apps-android-sdk22",
+      "is_disabled": true,
+      "status": 1,
+      "is_public": false,
+      "owner": {
+        "account_type": "user",
+        "name": "ninja",
+        "slug": "f0aa1db2bc8d7952"
+      },
+      "avatar_url": null
+    },
+    {
+      "slug": "a71b886445ea412a",
+      "title": "Android sample app",
+      "project_type": "android",
+      "provider": "github",
+      "repo_owner": "bitrise-samples",
+      "repo_url": "https://github.com/bitrise-samples/sample-apps-android-sdk22",
+      "repo_slug": "sample-apps-android-sdk22",
+      "is_disabled": false,
+      "status": 1,
+      "is_public": false,
+      "owner": {
+        "account_type": "user",
+        "name": "ninja",
+        "slug": "f0aa1db2bc8d7952"
+      },
+      "avatar_url": null
+    },
+    {
+      "slug": "6d22f30d0f50d3ce",
+      "title": "devise",
+      "project_type": "other",
+      "provider": "github",
+      "repo_owner": "bitrise-ninja",
+      "repo_url": "git@github.com:bitrise-ninja/devise.git",
+      "repo_slug": "devise",
+      "is_disabled": false,
+      "status": 1,
+      "is_public": false,
+      "owner": {
+        "account_type": "user",
+        "name": "ninja",
+        "slug": "f0aa1db2bc8d7952"
+      },
+      "avatar_url": null
+    },
+    {
+      "slug": "b61886cce55814b3",
+      "title": "iOS sample app",
+      "project_type": "ios",
+      "provider": "github",
+      "repo_owner": "bitrise-io",
+      "repo_url": "https://github.com/bitrise-io/sample-apps-ios-simple-objc.git",
+      "repo_slug": "sample-apps-ios-simple-objc",
+      "is_disabled": false,
+      "status": 1,
+      "is_public": false,
+      "owner": {
+        "account_type": "user",
+        "name": "ninja",
+        "slug": "f0aa1db2bc8d7952"
+      },
+      "avatar_url": null
+    }
+  ],
+  "paging": {
+    "total_item_count": 4,
+    "page_item_limit": 50
+  }
+}

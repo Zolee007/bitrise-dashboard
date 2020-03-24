@@ -38,12 +38,14 @@ const NotFoundPage = (): JSX.Element => {
         <PrivateLayout title="" minHeight="660px">
           <StyledFlex>
             <StyledShadowCard p={4}>
-              <StyledImage />
-              <Heading fontSize={6} color="secondary">
+              <StyledImage data-cy="not-found-image" />
+              <Heading data-cy="not-found-title" fontSize={6} color="secondary">
                 Page not found!
               </Heading>
               <HomeLink>
-                <Button variant="big">Go Home</Button>
+                <Button data-cy="not-found-go-home" variant="big">
+                  Go Home
+                </Button>
               </HomeLink>
             </StyledShadowCard>
           </StyledFlex>
@@ -51,12 +53,14 @@ const NotFoundPage = (): JSX.Element => {
       ) : (
         <PublicLayout minHeight="660px">
           <StyledShadowCard p={4}>
-            <StyledImage />
-            <Heading fontSize={6} color="secondary">
+            <StyledImage data-cy="not-found-image" />
+            <Heading data-cy="not-found-title" fontSize={6} color="secondary">
               Page not found!
             </Heading>
             <HomeLink>
-              <Button variant="big">Go Home</Button>
+              <Button data-cy="not-found-go-home" variant="big">
+                Go Home
+              </Button>
             </HomeLink>
           </StyledShadowCard>
         </PublicLayout>

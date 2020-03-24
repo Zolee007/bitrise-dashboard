@@ -30,9 +30,11 @@ const PrivateLayout = ({
 }: PropsWithChildren<PrivateLayoutProps>): JSX.Element => {
   return (
     <StyledPublicLayout {...rest}>
-      <Header height="60px" title={title} />
-      <StyledBox as="main">{children}</StyledBox>
-      <Footer height="40px" />
+      <Header data-cy="header" height="60px" title={title} />
+      <StyledBox data-cy="content" as="main">
+        {children}
+      </StyledBox>
+      <Footer height="40px" data-cy="footer" />
     </StyledPublicLayout>
   );
 };

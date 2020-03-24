@@ -18,7 +18,7 @@ export function getAppOwnerAvatarUrl(app?: App | null): string | null {
 }
 
 export function getAppShortName(app?: App | null): string {
-  return app?.title.toUpperCase()[0] || "-";
+  return app?.title?.toUpperCase()[0] || "-";
 }
 
 export function getAppColor(app?: App | null): string {

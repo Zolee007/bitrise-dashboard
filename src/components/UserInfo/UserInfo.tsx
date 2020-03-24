@@ -13,10 +13,10 @@ const UserInfo = ({ ...rest }: UserInfoProps): JSX.Element => {
 
   return (
     <Flex alignItems="center" {...rest}>
-      <Image variant="avatar" src={user?.avatar_url || defaultImage} />
-      <Link to="/profile">
-        <NavLink variant="nav" fontSize={2}>
-          {user?.username || "Anonymous"}
+      <Image data-cy="userinfo-avatar" variant="avatar" src={user?.avatar_url || defaultImage} />
+      <Link data-cy="userinfo-username" to="/profile">
+        <NavLink variant="nav" as="span" fontSize={2}>
+          {user?.username}
         </NavLink>
       </Link>
     </Flex>

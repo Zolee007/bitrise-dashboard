@@ -13,7 +13,8 @@
     "plugin:react/recommended" /* Recommended React rules */,
     "plugin:prettier/recommended" /* Recommended Prettier rules */,
     "prettier/@typescript-eslint",
-    "prettier/react"
+    "prettier/react",
+    "plugin:cypress/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -27,7 +28,7 @@
     "ecmaVersion": 2018 /* Allows for using modern ECMAScript features */,
     "sourceType": "module" /* Allows for using imports */
   },
-  "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier"],
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier", "cypress"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
@@ -37,7 +38,7 @@
       "always",
       {
         "line": {
-          "markers": ["!", "?", "*", "//"],
+          "markers": ["!", "?", "*", "/", "//"],
           "exceptions": ["-", "#", "/"]
         },
         "block": {

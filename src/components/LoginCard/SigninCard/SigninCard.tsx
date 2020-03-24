@@ -23,8 +23,11 @@ const SignInCard = (): JSX.Element => {
 
   return (
     <StyledShadowCard p={4} px={5}>
-      <CardHeading mb={3}>Select user</CardHeading>
+      <CardHeading data-cy="signin-heading" mb={3}>
+        Select user
+      </CardHeading>
       <Creatable
+        data-cy="signin-user-selector"
         isClearable={true}
         defaultValue={defaultValue}
         options={[defaultValue]}
@@ -36,7 +39,7 @@ const SignInCard = (): JSX.Element => {
           }
         }}
       />
-      <Button variant="big" m={3} onClick={handler}>
+      <Button data-cy="signin-login-button" variant="big" m={3} onClick={handler}>
         Login
       </Button>
     </StyledShadowCard>

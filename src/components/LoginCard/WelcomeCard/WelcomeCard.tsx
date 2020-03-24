@@ -53,20 +53,22 @@ const WelcomeCard = ({ ...rest }: WelcomeCardProps): JSX.Element => {
       {!error && user && (
         <>
           <StyledImage backgroundColor="skeleton" height="220px" width="220px" src={user.avatar_url || userImage} />
-          <Text fontSize={4} fontWeight="300">
+          <Text data-cy="welcome-user-name" fontSize={4} fontWeight="300">
             {user.username}
           </Text>
-          <Heading fontSize={5}>Welcome back!</Heading>
-          <Button variant="big" m={3} onClick={signInHandler}>
+          <Heading data-cy="welcome-heading" fontSize={5}>
+            Welcome back!
+          </Heading>
+          <Button data-cy="welcome-continue-button" variant="big" m={3} onClick={signInHandler}>
             Continue
           </Button>
           <Flex width="100%" alignItems="center">
             <StyledBox flex="1" margin={3} backgroundColor="secondary" />
-            <Text>Not {user.username}?</Text>
+            <Text data-cy="welcome-not-you">Not {user.username}?</Text>
             <StyledBox flex="1" margin={3} backgroundColor="secondary" />
           </Flex>
-          <Button variant="big" m={3} onClick={signOutHandler}>
-            Sign-in
+          <Button data-cy="welcome-signin-other-button" variant="big" m={3} onClick={signOutHandler}>
+            Sign-in as other
           </Button>
         </>
       )}

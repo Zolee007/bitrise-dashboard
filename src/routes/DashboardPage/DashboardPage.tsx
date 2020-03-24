@@ -30,9 +30,9 @@ const DashboardPage = (): JSX.Element => {
   return (
     <PrivateLayout title="Dashboard">
       <Grid p={3}>
-        <OrganizationCard sx={{ gridArea: "org" }} />
-        <BuildListCard sx={{ gridArea: "builds", alignSelf: "start" }} />
-        <AppListCard sx={{ gridArea: "apps", alignSelf: "start" }} />
+        <OrganizationCard data-cy="organization-list" sx={{ gridArea: "org" }} />
+        <BuildListCard data-cy="build-list" sx={{ gridArea: "builds", alignSelf: "start" }} />
+        <AppListCard data-cy="app-list" sx={{ gridArea: "apps", alignSelf: "start" }} />
       </Grid>
     </PrivateLayout>
   );

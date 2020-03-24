@@ -10,8 +10,8 @@ export type HeaderMenuItemProps = {
 
 const HeaderMenuItem = ({ title, path, selected }: HeaderMenuItemProps): JSX.Element => {
   return (
-    <Link to={path}>
-      <NavLink variant="nav">
+    <Link data-cy="header-menuitem" to={path}>
+      <NavLink variant="nav" as="span">
         <Text mx={2} fontSize={3} fontWeight={selected ? "bold" : "300"}>
           {title}
         </Text>

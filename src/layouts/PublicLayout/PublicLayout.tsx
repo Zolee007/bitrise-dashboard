@@ -16,7 +16,11 @@ const StyledFlex = styled(Flex)`
 `;
 
 const PublicLayout = ({ children, ...rest }: PropsWithChildren<FlexProps>): JSX.Element => {
-  return <StyledFlex {...rest}>{children}</StyledFlex>;
+  return (
+    <StyledFlex data-cy="content" {...rest}>
+      {children}
+    </StyledFlex>
+  );
 };
 
 export default PublicLayout;

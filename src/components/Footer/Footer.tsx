@@ -14,7 +14,9 @@ export type FooterProps = FlexProps & ShadowProps;
 const Footer = (props: FooterProps): JSX.Element => {
   return (
     <StyledFlex as="footer" backgroundColor="primary" boxShadow="footer" p={2} {...props}>
-      <Text variant="copyrightText">Copyright © 2020 - Zoltan Szabo</Text>
+      <Text data-cy="footer-copyright" variant="copyrightText">
+        Copyright © {new Date().getFullYear()} - Zoltan Szabo
+      </Text>
     </StyledFlex>
   );
 };

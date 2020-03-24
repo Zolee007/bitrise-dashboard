@@ -25,14 +25,14 @@ const Header = ({ title, ...rest }: HeaderProps): JSX.Element => {
   return (
     <StyledFlex variant="header" as="header" {...rest}>
       <HomeLink>
-        <BitriseLogo height="32px" />
+        <BitriseLogo data-cy="header-logo" height="32px" />
       </HomeLink>
       {HeaderItems.map((item: MenuItem, index: number) => (
         <HeaderMenuItem key={index} selected={item.title === title} {...item} />
       ))}
       <Box mx="auto" />
-      <UserInfo />
-      <Button variant="signout" onClick={handler}>
+      <UserInfo data-cy="header-userinfo" />
+      <Button data-cy="header-logout-button" variant="signout" onClick={handler}>
         <SignoutIcon fill="white" />
       </Button>
     </StyledFlex>
